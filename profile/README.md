@@ -5,6 +5,19 @@
 Agent infrastructure for people running agents that do real work —
 bridging, guardrails, and verifiable consensus.
 
+**Two agent runtimes. One MCP interface. Every lever gated.**
+
+[![Build](https://img.shields.io/github/actions/workflow/status/leverframe/fleet-bridge/ci.yml?branch=main&style=flat-square&label=build)](https://github.com/leverframe/fleet-bridge/actions/workflows/ci.yml)
+[![Secret scan](https://img.shields.io/github/actions/workflow/status/leverframe/fleet-bridge/gitleaks.yml?branch=main&style=flat-square&label=secret%20scan)](https://github.com/leverframe/fleet-bridge/actions/workflows/gitleaks.yml)
+[![License](https://img.shields.io/github/license/leverframe/fleet-bridge?style=flat-square)](https://github.com/leverframe/fleet-bridge/blob/main/LICENSE)
+[![Docs](https://img.shields.io/website?url=https%3A%2F%2Fdocs.leverframe.dev&style=flat-square&label=docs)](https://docs.leverframe.dev)
+
+Leverframe is named for the railway signal box: an interlocking where
+every lever is mechanically prevented from conflicting with any other.
+The tools here apply that discipline to agent fleets — deterministic
+guardrails, signed consensus receipts, one audited bridge between your
+MCP clients and your agent runtimes.
+
 | Project | What it does | License |
 |---|---|---|
 | [fleet-bridge](https://github.com/leverframe/fleet-bridge) | One stdio MCP server that bridges OpenClaw gateway agents **and** Hermes agents into any MCP client — cross-runtime by construction. In daily production use on a multi-agent fleet. | [MIT](https://github.com/leverframe/fleet-bridge/blob/main/LICENSE) |
@@ -12,6 +25,25 @@ bridging, guardrails, and verifiable consensus.
 | [tractum](https://github.com/leverframe/tractum) | Verifiable multi-agent consensus for Claude — signed k-of-n receipts bound to transcript evidence — [tractum.dev](https://tractum.dev) | [BUSL-1.1](https://github.com/leverframe/tractum/blob/main/LICENSE) |
 
 **Docs**: [docs.leverframe.dev](https://docs.leverframe.dev) — per-product reference for fleet-bridge, wranglebot, and tractum.
+
+### How it fits
+
+```mermaid
+flowchart LR
+    subgraph clients["MCP clients"]
+        CC["Claude Code"]
+        Z["Zed / other"]
+    end
+    FB["fleet-bridge<br/>(stdio MCP)"]
+    subgraph runtimes["agent runtimes"]
+        OC["OpenClaw gateway"]
+        H["Hermes"]
+    end
+    CC --> FB
+    Z --> FB
+    FB --> OC
+    FB --> H
+```
 
 Ecosystem: wranglebot and tractum are emitters of the open
 [`.curt`](https://github.com/dotcurt/dot_curt) conversation format —
