@@ -1,6 +1,6 @@
-# Leverframe
-
-<img src="https://raw.githubusercontent.com/leverframe/.github/main/profile/leverframe-header.gif" alt="Leverframe — agent infrastructure" width="640">
+<div align="center">
+  <img src="https://raw.githubusercontent.com/leverframe/.github/main/profile/leverframe-header.gif" alt="Leverframe — agent infrastructure" width="100%">
+</div>
 
 Agent infrastructure for people running agents that do real work —
 bridging, guardrails, and verifiable consensus.
