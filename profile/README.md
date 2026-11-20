@@ -1,5 +1,7 @@
 # Leverframe
 
+![Leverframe — one panel, every route locked safe](https://raw.githubusercontent.com/leverframe/.github/main/profile/leverframe-readme-animated-500.gif)
+
 Agent infrastructure for people running agents that do real work —
 bridging, guardrails, and verifiable consensus.
 
