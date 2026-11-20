@@ -1,6 +1,6 @@
 # Leverframe
 
-<img src="https://raw.githubusercontent.com/leverframe/.github/main/profile/leverframe-readme-animated-500.gif" alt="Leverframe — one panel, every route locked safe" width="200">
+<img src="https://raw.githubusercontent.com/leverframe/.github/main/profile/leverframe-header.gif" alt="Leverframe — agent infrastructure" width="640">
 
 Agent infrastructure for people running agents that do real work —
 bridging, guardrails, and verifiable consensus.
