@@ -15,6 +15,9 @@ format as everything else.
 
 ## Licensing
 
-Source-available under BUSL-1.1 — free for personal and business
-production use; the only carve-out is reselling the work as a
-substitute.
+Per-repo. WrangleBot and Tractum are source-available under
+[BUSL-1.1](https://github.com/leverframe/wranglebot/blob/main/LICENSE)
+— free for personal and business production use; the only carve-out is
+reselling the work as a substitute. The fleet-operations core
+(orchestration, supervision, bridging) will be open-licensed when it
+ships.
