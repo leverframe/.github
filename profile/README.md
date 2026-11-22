@@ -22,9 +22,9 @@ you the whole board.
 | Project | What it does | License |
 |---|---|---|
 | [fleet-bridge](https://github.com/leverframe/fleet-bridge) | One stdio MCP server that bridges OpenClaw gateway agents **and** Hermes agents into any MCP client — cross-runtime by construction. On npm as [`fleet-bridge`](https://www.npmjs.com/package/fleet-bridge). In daily production use on a multi-agent fleet. | [MIT](https://github.com/leverframe/fleet-bridge/blob/main/LICENSE) |
+| [cabinet-lite](https://github.com/leverframe/cabinet-lite) | The signal box made software: a read-only fleet dashboard for OpenClaw, Hermes, and MCP — what needs you, who's free, what happened. | [MIT](https://github.com/leverframe/cabinet-lite/blob/main/LICENSE) |
 | [wranglebot](https://github.com/leverframe/wranglebot) | Deterministic guardrails, loop-breaking, and `.curt` emission for coding agents (Claude Code, Codex) — [wranglebot.com](https://wranglebot.com) | [BUSL-1.1](https://github.com/leverframe/wranglebot/blob/main/LICENSE) |
 | [tractum](https://github.com/leverframe/tractum) | Verifiable multi-agent consensus for Claude — signed k-of-n receipts bound to transcript evidence — [tractum.dev](https://tractum.dev) | [BUSL-1.1](https://github.com/leverframe/tractum/blob/main/LICENSE) |
-| [cabinet-lite](https://github.com/leverframe/cabinet-lite) | The signal box made software: a read-only fleet dashboard for OpenClaw, Hermes, and MCP — what needs you, who's free, what happened. | [MIT](https://github.com/leverframe/cabinet-lite/blob/main/LICENSE) |
 
 **Docs**: [docs.leverframe.dev](https://docs.leverframe.dev) — per-product reference for the whole stack.
 
