@@ -30,25 +30,10 @@ you the whole board.
 
 ### How it fits
 
-```mermaid
-flowchart LR
-    subgraph clients["MCP clients"]
-        CC["Claude Code"]
-        Z["Zed / other"]
-    end
-    FB["fleet-bridge<br/>(stdio MCP)"]
-    subgraph runtimes["agent runtimes"]
-        OC["OpenClaw gateway"]
-        H["Hermes"]
-    end
-    CB["cabinet-lite<br/>(read-only signal box)"]
-    CC --> FB
-    Z --> FB
-    FB --> OC
-    FB --> H
-    CB -. "reads rosters + health" .-> OC
-    CB -.-> H
-```
+<p align="center">
+  <img src="assets/how-it-fits.svg" width="830" alt="How Leverframe fits together: MCP clients such as Claude Code and Zed connect to fleet-bridge, one stdio MCP server with gated levers, which connects to the OpenClaw gateway and Hermes agent runtimes; wranglebot and tractum emit records in the open .curt conversation format; cabinet-lite reads the board">
+</p>
+
 
 Ecosystem: wranglebot and tractum are emitters of the open
 [`.curt`](https://github.com/dotcurt/dot_curt) conversation format —
