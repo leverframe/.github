@@ -61,7 +61,7 @@ you the whole board.
 ### How it fits
 
 <p align="center">
-  <img src="assets/how-it-fits.svg" width="830" alt="How Leverframe fits together: wranglebot supervises coding agents such as Claude Code and Codex; their tool calls reach the OpenClaw gateway and Hermes agent runtimes through fleet-bridge, one stdio MCP server where every lever is gated; tractum verifies multi-agent consensus with signed k-of-n receipts; cabinet-lite reads across the whole fleet as a read-only signal box">
+  <img src="assets/how-it-fits.png" width="830" alt="How Leverframe fits together: wranglebot supervises coding agents such as Claude Code and Codex; their tool calls reach the OpenClaw gateway and Hermes agent runtimes through fleet-bridge, one stdio MCP server where every lever is gated; tractum verifies multi-agent consensus with signed k-of-n receipts; cabinet-lite reads across the whole fleet as a read-only signal box">
 </p>
 
 
