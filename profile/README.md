@@ -61,8 +61,8 @@ Per-repo, stated plainly. The fleet-operations core — the bridge and
 the signal box — is **MIT**: take it, run it, fork it. WrangleBot and
 Tractum are source-available under
 [BUSL-1.1](https://spdx.org/licenses/BUSL-1.1.html): free for personal
-and business production use; the only carve-out is reselling the work
-as a substitute.
+and noncommercial production use; commercial use requires a written
+license from the Licensor. Both convert to MIT in 2030.
 
 ## Get started
 
