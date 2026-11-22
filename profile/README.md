@@ -19,14 +19,44 @@ guardrails, signed consensus receipts, one audited bridge between your
 MCP clients and your agent runtimes, and a read-only panel that shows
 you the whole board.
 
-| Project | What it does | License |
-|---|---|---|
-| [fleet-bridge](https://github.com/leverframe/fleet-bridge) | One stdio MCP server that bridges OpenClaw gateway agents **and** Hermes agents into any MCP client — cross-runtime by construction. On npm as [`fleet-bridge`](https://www.npmjs.com/package/fleet-bridge). In daily production use on a multi-agent fleet. | [MIT](https://github.com/leverframe/fleet-bridge/blob/main/LICENSE) |
-| [cabinet-lite](https://github.com/leverframe/cabinet-lite) | The signal box made software: a read-only fleet dashboard for OpenClaw, Hermes, and MCP — what needs you, who's free, what happened. | [MIT](https://github.com/leverframe/cabinet-lite/blob/main/LICENSE) |
-| [wranglebot](https://github.com/leverframe/wranglebot) | Deterministic guardrails, loop-breaking, and `.curt` emission for coding agents (Claude Code, Codex) — [wranglebot.com](https://wranglebot.com) | [BUSL-1.1](https://github.com/leverframe/wranglebot/blob/main/LICENSE) |
-| [tractum](https://github.com/leverframe/tractum) | Verifiable multi-agent consensus for Claude — signed k-of-n receipts bound to transcript evidence — [tractum.dev](https://tractum.dev) | [BUSL-1.1](https://github.com/leverframe/tractum/blob/main/LICENSE) |
-
-**Docs**: [docs.leverframe.dev](https://docs.leverframe.dev) — per-product reference for the whole stack.
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <br>
+      <a href="https://github.com/leverframe/fleet-bridge"><img src="https://raw.githubusercontent.com/leverframe/fleet-bridge/main/docs/assets/fleet-bridge-mark.svg" width="112" alt="fleet-bridge mark"></a><br><br>
+      <a href="https://github.com/leverframe/fleet-bridge"><strong>fleet-bridge</strong></a><br>
+      <sub>One stdio MCP server bridging <strong>OpenClaw</strong> and <strong>Hermes</strong> agents<br>into any MCP client — cross-runtime by construction.</sub><br><br>
+      <a href="https://github.com/leverframe/fleet-bridge/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="MIT"></a>
+      <a href="https://www.npmjs.com/package/fleet-bridge"><img src="https://img.shields.io/npm/v/fleet-bridge?style=flat-square&label=npm&labelColor=0E1116&color=FFB224" alt="npm"></a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <br>
+      <a href="https://github.com/leverframe/cabinet-lite"><img src="https://raw.githubusercontent.com/leverframe/cabinet-lite/main/assets/logo/cabinet-mark.svg" width="112" alt="cabinet-lite mark"></a><br><br>
+      <a href="https://github.com/leverframe/cabinet-lite"><strong>cabinet-lite</strong></a><br>
+      <sub>The signal box made software: a read-only fleet dashboard —<br>what needs you, who's free, what happened.</sub><br><br>
+      <a href="https://github.com/leverframe/cabinet-lite/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="MIT"></a>
+      <a href="https://docs.leverframe.dev"><img src="https://img.shields.io/website?url=https%3A%2F%2Fdocs.leverframe.dev&style=flat-square&label=docs&labelColor=0E1116&color=FFB224" alt="docs"></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <br>
+      <a href="https://github.com/leverframe/wranglebot"><img src="https://raw.githubusercontent.com/leverframe/wranglebot-site/main/brand/wranglebot-mark-on-amber.svg" width="112" alt="wranglebot mark"></a><br><br>
+      <a href="https://github.com/leverframe/wranglebot"><strong>wranglebot</strong></a><br>
+      <sub>Deterministic guardrails, loop-breaking, and <code>.curt</code> emission<br>for coding agents (Claude Code, Codex).</sub><br><br>
+      <a href="https://github.com/leverframe/wranglebot/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
+      <a href="https://wranglebot.com"><img src="https://img.shields.io/website?url=https%3A%2F%2Fwranglebot.com&style=flat-square&label=wranglebot.com&labelColor=0E1116&color=FFB224" alt="wranglebot.com"></a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <br>
+      <a href="https://github.com/leverframe/tractum"><img src="https://raw.githubusercontent.com/leverframe/tractum/main/assets/tractum-avatar.svg" width="112" alt="tractum mark"></a><br><br>
+      <a href="https://github.com/leverframe/tractum"><strong>tractum</strong></a><br>
+      <sub>Verifiable multi-agent consensus for Claude —<br>signed k-of-n receipts bound to transcript evidence.</sub><br><br>
+      <a href="https://github.com/leverframe/tractum/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
+      <a href="https://tractum.dev"><img src="https://img.shields.io/website?url=https%3A%2F%2Ftractum.dev&style=flat-square&label=tractum.dev&labelColor=0E1116&color=FFB224" alt="tractum.dev"></a>
+    </td>
+  </tr>
+</table>
 
 ### How it fits
 
@@ -38,7 +68,8 @@ you the whole board.
 Ecosystem: wranglebot and tractum are emitters of the open
 [`.curt`](https://github.com/dotcurt/dot_curt) conversation format —
 the decision record and the consensus receipt ride in the same file
-format as everything else.
+format as everything else. Per-product reference for the whole stack
+lives at **[docs.leverframe.dev](https://docs.leverframe.dev)**.
 
 ## Licensing
 
