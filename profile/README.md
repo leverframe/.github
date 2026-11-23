@@ -3,7 +3,8 @@
 </div>
 
 Agent infrastructure for people running agents that do real work —
-bridging, guardrails, verifiable consensus, and a signal box to watch it all.
+bridging, routing, guardrails, verifiable consensus, plugin trust,
+and a signal box to watch it all.
 
 **Two agent runtimes. One MCP interface. One signal box. Every lever gated.**
 
@@ -15,9 +16,13 @@ bridging, guardrails, verifiable consensus, and a signal box to watch it all.
 Leverframe is named for the railway signal box: an interlocking where
 every lever is mechanically prevented from conflicting with any other.
 The tools here apply that discipline to agent fleets — deterministic
-guardrails, signed consensus receipts, one audited bridge between your
-MCP clients and your agent runtimes, and a read-only panel that shows
-you the whole board.
+guardrails, signed consensus receipts, signed plugin installs, one
+audited bridge between your MCP clients and your agent runtimes, and
+a read-only panel that shows you the whole board.
+
+### The stack
+
+#### Bridge & routing
 
 <table>
   <tr>
@@ -31,22 +36,33 @@ you the whole board.
     </td>
     <td width="50%" align="center" valign="top">
       <br>
-      <a href="https://github.com/leverframe/cabinet-lite"><img src="https://raw.githubusercontent.com/leverframe/cabinet-lite/main/assets/logo/cabinet-mark.svg" width="112" alt="cabinet-lite mark"></a><br><br>
-      <a href="https://github.com/leverframe/cabinet-lite"><strong>cabinet-lite</strong></a><br>
-      <sub>The signal box made software: a read-only fleet dashboard —<br>what needs you, who's free, what happened.</sub><br><br>
-      <a href="https://github.com/leverframe/cabinet-lite/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="MIT"></a>
-      <a href="https://docs.leverframe.dev"><img src="https://img.shields.io/website?url=https%3A%2F%2Fdocs.leverframe.dev&style=flat-square&label=docs&labelColor=0E1116&color=FFB224" alt="docs"></a>
+      <a href="https://github.com/leverframe/agent-gateway"><strong>agent-gateway</strong></a><br>
+      <sub>Plugin-based gateway routing platform messages<br>(Discord, Slack, Telegram) to your agents — plus an<br>HTTP-to-stdio bridge for external MCP tools.</sub><br><br>
+      <a href="https://github.com/leverframe/agent-gateway/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
     </td>
   </tr>
+</table>
+
+#### Guardrails & verification
+
+<table>
   <tr>
     <td width="50%" align="center" valign="top">
       <br>
       <a href="https://github.com/leverframe/wranglebot"><img src="assets/wranglebot-mark.svg" width="112" alt="wranglebot mark"></a><br><br>
       <a href="https://github.com/leverframe/wranglebot"><strong>wranglebot</strong></a><br>
       <sub>Deterministic guardrails, loop-breaking, and <code>.curt</code> emission<br>for coding agents (Claude Code, Codex).</sub><br><br>
-      <a href="https://github.com/leverframe/wranglebot/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
-      <a href="https://wranglebot.com"><img src="https://img.shields.io/website?url=https%3A%2F%2Fwranglebot.com&style=flat-square&label=wranglebot.com&labelColor=0E1116&color=FFB224" alt="wranglebot.com"></a>
+      <a href="https://github.com/leverframe/wranglebot/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="MIT"></a>
+      <a href="https://www.npmjs.com/package/@wranglebot/cli"><img src="https://img.shields.io/npm/v/@wranglebot/cli?style=flat-square&label=npm&labelColor=0E1116&color=FFB224" alt="npm"></a>
     </td>
+    <td width="50%" align="center" valign="top">
+      <br>
+      <a href="https://github.com/leverframe/skillguard"><strong>skillguard</strong></a><br>
+      <sub>Signed + transparent plugin directory for Claude Code —<br>minisign-verified installs only, atomic and versioned,<br>with a nightly trust-annotated index. Unsigned is refused.</sub><br><br>
+      <a href="https://github.com/leverframe/skillguard/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" align="center" valign="top">
       <br>
       <a href="https://github.com/leverframe/tractum"><img src="https://raw.githubusercontent.com/leverframe/tractum/main/assets/tractum-avatar.svg" width="112" alt="tractum mark"></a><br><br>
@@ -55,6 +71,37 @@ you the whole board.
       <a href="https://github.com/leverframe/tractum/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
       <a href="https://tractum.dev"><img src="https://img.shields.io/website?url=https%3A%2F%2Ftractum.dev&style=flat-square&label=tractum.dev&labelColor=0E1116&color=FFB224" alt="tractum.dev"></a>
     </td>
+    <td width="50%"></td>
+  </tr>
+</table>
+
+#### The signal box
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <br>
+      <a href="https://github.com/leverframe/cabinet-lite"><img src="https://raw.githubusercontent.com/leverframe/cabinet-lite/main/assets/logo/cabinet-mark.svg" width="112" alt="cabinet-lite mark"></a><br><br>
+      <a href="https://github.com/leverframe/cabinet-lite"><strong>cabinet-lite</strong></a><br>
+      <sub>The signal box made software: a cross-runtime fleet dashboard —<br>what needs you, who's free, what happened.</sub><br><br>
+      <a href="https://github.com/leverframe/cabinet-lite/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="MIT"></a>
+      <a href="https://docs.leverframe.dev"><img src="https://img.shields.io/website?url=https%3A%2F%2Fdocs.leverframe.dev&style=flat-square&label=docs&labelColor=0E1116&color=FFB224" alt="docs"></a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <br>
+      <a href="https://github.com/leverframe/hermes-fleet"><strong>hermes-fleet</strong></a><br>
+      <sub>Operator dashboard plugin for Hermes Desktop —<br>cabinet state, agent roster, journal freshness,<br>and an accountability queue in one tab.</sub><br><br>
+      <a href="https://github.com/leverframe/hermes-fleet/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <br>
+      <a href="https://github.com/leverframe/heartbeat-collector"><strong>heartbeat-collector</strong></a><br>
+      <sub>Fleet liveness: agents POST heartbeat pings,<br>dashboards read the collected state.</sub><br><br>
+      <a href="https://github.com/leverframe/heartbeat-collector/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
+    </td>
+    <td width="50%"></td>
   </tr>
 </table>
 
@@ -73,12 +120,14 @@ lives at **[docs.leverframe.dev](https://docs.leverframe.dev)**.
 
 ## Licensing
 
-Per-repo, stated plainly. The fleet-operations core — the bridge and
-the signal box — is **MIT**: take it, run it, fork it. WrangleBot and
-Tractum are source-available under
+Per-repo, stated plainly. **MIT** — take it, run it, fork it — for
+fleet-bridge, cabinet-lite, and wranglebot. Everything else in the
+stack (tractum, skillguard, agent-gateway, hermes-fleet,
+heartbeat-collector) is source-available under
 [BUSL-1.1](https://spdx.org/licenses/BUSL-1.1.html): free for personal
 and noncommercial production use; commercial use requires a written
-license from the Licensor. Both convert to MIT in 2030.
+license from the Licensor. All BUSL repos convert to MIT on
+2030-10-12.
 
 ## Get started
 
