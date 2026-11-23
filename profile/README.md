@@ -98,7 +98,7 @@ a read-only panel that shows you the whole board.
     <td width="50%" align="center" valign="top">
       <br>
       <a href="https://github.com/leverframe/heartbeat-collector"><strong>heartbeat-collector</strong></a><br>
-      <sub>Fleet liveness: agents POST heartbeat pings,<br>dashboards read the collected state.</sub><br><br>
+      <sub>Fleet liveness: the collector polls each agent's<br>/health on a 30s cycle; dashboards read the state.</sub><br><br>
       <a href="https://github.com/leverframe/heartbeat-collector/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
     </td>
     <td width="50%"></td>
