@@ -41,7 +41,7 @@ you the whole board.
   <tr>
     <td width="50%" align="center" valign="top">
       <br>
-      <a href="https://github.com/leverframe/wranglebot"><img src="https://raw.githubusercontent.com/leverframe/wranglebot-site/main/brand/wranglebot-mark-on-amber.svg" width="112" alt="wranglebot mark"></a><br><br>
+      <a href="https://github.com/leverframe/wranglebot"><img src="assets/wranglebot-mark.svg" width="112" alt="wranglebot mark"></a><br><br>
       <a href="https://github.com/leverframe/wranglebot"><strong>wranglebot</strong></a><br>
       <sub>Deterministic guardrails, loop-breaking, and <code>.curt</code> emission<br>for coding agents (Claude Code, Codex).</sub><br><br>
       <a href="https://github.com/leverframe/wranglebot/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
