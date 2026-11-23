@@ -28,7 +28,7 @@ a read-only panel that shows you the whole board.
   <tr>
     <td width="50%" align="center" valign="top">
       <br>
-      <a href="https://github.com/leverframe/fleet-bridge"><img src="https://raw.githubusercontent.com/leverframe/fleet-bridge/main/docs/assets/fleet-bridge-mark.svg" width="112" alt="fleet-bridge mark"></a><br><br>
+      <a href="https://github.com/leverframe/fleet-bridge"><img src="https://raw.githubusercontent.com/leverframe/.github/main/profile/assets/fleet-bridge-mark.png" width="112" alt="fleet-bridge mark"></a><br><br>
       <a href="https://github.com/leverframe/fleet-bridge"><strong>fleet-bridge</strong></a><br>
       <sub>One stdio MCP server bridging <strong>OpenClaw</strong> and <strong>Hermes</strong> agents<br>into any MCP client — cross-runtime by construction.</sub><br><br>
       <a href="https://github.com/leverframe/fleet-bridge/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="MIT"></a>
@@ -36,6 +36,7 @@ a read-only panel that shows you the whole board.
     </td>
     <td width="50%" align="center" valign="top">
       <br>
+      <a href="https://github.com/leverframe/agent-gateway"><img src="https://raw.githubusercontent.com/leverframe/.github/main/profile/assets/agent-gateway-mark.png" width="112" alt="agent-gateway mark"></a><br><br>
       <a href="https://github.com/leverframe/agent-gateway"><strong>agent-gateway</strong></a><br>
       <sub>Plugin-based gateway routing platform messages<br>(Discord, Slack, Telegram) to your agents — plus an<br>HTTP-to-stdio bridge for external MCP tools.</sub><br><br>
       <a href="https://github.com/leverframe/agent-gateway/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
@@ -49,7 +50,7 @@ a read-only panel that shows you the whole board.
   <tr>
     <td width="50%" align="center" valign="top">
       <br>
-      <a href="https://github.com/leverframe/wranglebot"><img src="assets/wranglebot-mark.svg" width="112" alt="wranglebot mark"></a><br><br>
+      <a href="https://github.com/leverframe/wranglebot"><img src="https://raw.githubusercontent.com/leverframe/.github/main/profile/assets/wranglebot-mark.png" width="112" alt="wranglebot mark"></a><br><br>
       <a href="https://github.com/leverframe/wranglebot"><strong>wranglebot</strong></a><br>
       <sub>Deterministic guardrails, loop-breaking, and <code>.curt</code> emission<br>for coding agents (Claude Code, Codex).</sub><br><br>
       <a href="https://github.com/leverframe/wranglebot/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="MIT"></a>
@@ -57,6 +58,7 @@ a read-only panel that shows you the whole board.
     </td>
     <td width="50%" align="center" valign="top">
       <br>
+      <a href="https://github.com/leverframe/skillguard"><img src="https://raw.githubusercontent.com/leverframe/.github/main/profile/assets/skillguard-mark.png" width="112" alt="skillguard mark"></a><br><br>
       <a href="https://github.com/leverframe/skillguard"><strong>skillguard</strong></a><br>
       <sub>Signed + transparent plugin directory for Claude Code —<br>minisign-verified installs only, atomic and versioned,<br>with a nightly trust-annotated index. Unsigned is refused.</sub><br><br>
       <a href="https://github.com/leverframe/skillguard/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
@@ -65,7 +67,7 @@ a read-only panel that shows you the whole board.
   <tr>
     <td width="50%" align="center" valign="top">
       <br>
-      <a href="https://github.com/leverframe/tractum"><img src="https://raw.githubusercontent.com/leverframe/tractum/main/assets/tractum-avatar.svg" width="112" alt="tractum mark"></a><br><br>
+      <a href="https://github.com/leverframe/tractum"><img src="https://raw.githubusercontent.com/leverframe/.github/main/profile/assets/tractum-mark.png" width="112" alt="tractum mark"></a><br><br>
       <a href="https://github.com/leverframe/tractum"><strong>tractum</strong></a><br>
       <sub>Verifiable multi-agent consensus for Claude —<br>signed k-of-n receipts bound to transcript evidence.</sub><br><br>
       <a href="https://github.com/leverframe/tractum/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
@@ -81,7 +83,7 @@ a read-only panel that shows you the whole board.
   <tr>
     <td width="50%" align="center" valign="top">
       <br>
-      <a href="https://github.com/leverframe/cabinet-lite"><img src="https://raw.githubusercontent.com/leverframe/cabinet-lite/main/assets/logo/cabinet-mark.svg" width="112" alt="cabinet-lite mark"></a><br><br>
+      <a href="https://github.com/leverframe/cabinet-lite"><img src="https://raw.githubusercontent.com/leverframe/.github/main/profile/assets/cabinet-mark.png" width="112" alt="cabinet-lite mark"></a><br><br>
       <a href="https://github.com/leverframe/cabinet-lite"><strong>cabinet-lite</strong></a><br>
       <sub>The signal box made software: a cross-runtime fleet dashboard —<br>what needs you, who's free, what happened.</sub><br><br>
       <a href="https://github.com/leverframe/cabinet-lite/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="MIT"></a>
@@ -89,6 +91,7 @@ a read-only panel that shows you the whole board.
     </td>
     <td width="50%" align="center" valign="top">
       <br>
+      <a href="https://github.com/leverframe/hermes-fleet"><img src="https://raw.githubusercontent.com/leverframe/.github/main/profile/assets/hermes-fleet-mark.png" width="112" alt="hermes-fleet mark"></a><br><br>
       <a href="https://github.com/leverframe/hermes-fleet"><strong>hermes-fleet</strong></a><br>
       <sub>Operator dashboard plugin for Hermes Desktop —<br>cabinet state, agent roster, journal freshness,<br>and an accountability queue in one tab.</sub><br><br>
       <a href="https://github.com/leverframe/hermes-fleet/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
@@ -97,6 +100,7 @@ a read-only panel that shows you the whole board.
   <tr>
     <td width="50%" align="center" valign="top">
       <br>
+      <a href="https://github.com/leverframe/heartbeat-collector"><img src="https://raw.githubusercontent.com/leverframe/.github/main/profile/assets/heartbeat-collector-mark.png" width="112" alt="heartbeat-collector mark"></a><br><br>
       <a href="https://github.com/leverframe/heartbeat-collector"><strong>heartbeat-collector</strong></a><br>
       <sub>Fleet liveness: the collector polls each agent's<br>/health on a 30s cycle; dashboards read the state.</sub><br><br>
       <a href="https://github.com/leverframe/heartbeat-collector/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-BUSL--1.1-0E1116?style=flat-square&labelColor=0E1116&color=FFB224" alt="BUSL-1.1"></a>
