@@ -17,7 +17,15 @@ jobs:
         with:
           node-version: 22
 
+      # Run npx from a neutral cwd: repos declaring packageManager (pnpm/bun)
+      # make npm refuse `npx` from inside the repo (EBADDEVENGINES).
+      # Prettier config/ignore files are copied to the neutral cwd instead.
       - name: Check markdown formatting
         run: |
+          cd "$RUNNER_TEMP"
+          mkdir -p prettier-home && cd prettier-home
+          for f in .prettierrc .prettierrc.json .prettierrc.yml .prettierrc.toml .prettierignore; do
+            if [ -f "$GITHUB_WORKSPACE/$f" ]; then cp "$GITHUB_WORKSPACE/$f" ./; fi
+          done
           [ -f .prettierignore ] || printf 'node_modules/\ndist/\nbuild/\ncoverage/\n.next/\nvendor/\n' > .prettierignore
-          npx --yes prettier@3.6.2 --check "**/*.md"
+          npx --yes prettier@3.6.2 --check "$GITHUB_WORKSPACE/**/*.md"
