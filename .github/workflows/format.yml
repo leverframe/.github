@@ -1,0 +1,23 @@
+name: Format gate
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  markdown:
+    name: prettier (markdown)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check markdown formatting
+        run: |
+          [ -f .prettierignore ] || printf 'node_modules/\ndist/\nbuild/\ncoverage/\n.next/\nvendor/\n' > .prettierignore
+          npx --yes prettier@3.6.2 --check "**/*.md"
